@@ -59,21 +59,21 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
                     <li onClick={() => handleNavClick('surpriseBox')}>
                         <FontAwesomeIcon icon={faGift} /> Surprise Bags
                     </li>
-                    <li onClick={() => handleNavClick('orderManagement')}>
-                        <FontAwesomeIcon icon={faClipboardList} /> Order Management
+                    <li onClick={() => handleNavClick('ManagementPage')}>
+                        <FontAwesomeIcon icon={faClipboardList} /> Management
                     </li>
-                    <li onClick={() => handleNavClick('customerFeedback')}>
-                        <FontAwesomeIcon icon={faComments} /> Customer Interaction & Feedback
+                    <li onClick={() => handleNavClick('BranchManagement')}>
+                        <FontAwesomeIcon icon={faComments} />  branch
                     </li>
-                    <li onClick={() => handleNavClick('storeManagement')}>
+                    <li onClick={() => handleNavClick('OrderManagement')}>
                         <FontAwesomeIcon icon={faStore} /> Store Management
                     </li>
                     <li onClick={() => handleNavClick('incomePayment')}>
                         <FontAwesomeIcon icon={faUsers} /> Income and Payment
                     </li>
                     <span className="main-label">Settings</span>
-                    <li onClick={() => handleNavClick('userManagement')}>
-                        <FontAwesomeIcon icon={faUsers} /> Settings
+                    <li onClick={() => handleNavClick('brandManagement')}>
+                        <FontAwesomeIcon icon={faUsers} /> brand
                     </li>
                     <div className="sidebar-last-section">
                         <li onClick={() => handleNavClick('signup')}>
@@ -89,16 +89,16 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
                     <button className="menu-btn" onClick={() => handleNavClick('surpriseBox')}>
                         <FontAwesomeIcon icon={faGift} />
                     </button>
-                    <button className="menu-btn" onClick={() => handleNavClick('orderManagement')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('ManagementPage')}>
                         <FontAwesomeIcon icon={faClipboardList} />
                     </button>
-                    <button className="menu-btn" onClick={() => handleNavClick('customerFeedback')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('BranchManagement')}>
                         <FontAwesomeIcon icon={faComments} />
                     </button>
-                    <button className="menu-btn" onClick={() => handleNavClick('storeManagement')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('OrderManangement')}>
                         <FontAwesomeIcon icon={faStore} />
                     </button>
-                    <button className="menu-btn" onClick={() => handleNavClick('storeManagement')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('BrandManagement')}>
                         <FontAwesomeIcon icon={faInfo} />
                     </button>
                     <span className="main-label">Settings</span>

@@ -1,0 +1,39 @@
+.main-container{
+    margin-left: 130px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.managementPageContainer{
+  margin-left: 130px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.manager-list {
+        background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px; 
+    border-radius: 15px;
+  }
+  
+  .managementtitle {
+
+    background-color: #FDFAF7; 
+
+       display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1.7em; 
+}
+  
+.order-management h2 {
+    margin-top: 0; 
+  }
+  

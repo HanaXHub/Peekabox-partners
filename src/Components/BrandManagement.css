@@ -1,0 +1,374 @@
+.brandManagementContainer {
+
+      margin-left: 130px;
+      margin-right: 20px;
+      margin-top: 10px;
+
+}
+.brandManagmentContent{
+  margin-top: 50px;
+
+}
+
+.banner {
+  position: relative;
+  height: 200px;
+  background-color: #929292; 
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+  ;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top: 2px solid #FF80B4;
+  border-right: 2px solid #FF80B4;
+  border-left: 2px solid #FF80B4;
+
+}
+
+
+
+.logoImage {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.brandTitle {
+  position: absolute;
+  bottom: 120px;
+  left: 110px;
+  color: #fff;
+  font-family: "Lato";
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.imageNMapContent {
+  margin-top: 20px;
+  height:620px;
+  padding: 20px;
+ 
+}
+
+
+.topSection {
+  display: flex;
+  gap: 30px;
+  padding: 0 50px;
+  align-content: center;
+  justify-content:space-evenly;
+}
+
+.imageSection{
+  flex: 1;
+  margin-bottom: 20px;
+
+
+}
+
+.image {
+  width: auto;
+  min-width:900px; 
+  min-height: 600px;  
+  max-width:900px; 
+  max-height: 600px;   
+  object-fit: cover;
+  object-position: center;
+}
+
+.branchInfo{
+  text-align: left;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.branchesMap{
+  width: 100%;
+  text-align: left;
+  
+}
+
+
+
+
+.branchListContainer {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  margin-top: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.brancHeader h2{
+  background-color: #0B4B2C;
+  color: #ffffff;
+  padding: 16px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.branchTableTitles {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.branchTableTitles th,
+.branchTableTitles td {
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.branchTableTitles th {
+  color: #FF80B4;
+}
+
+.branchTableTitles td a {
+  color:#0B4B2C;
+  ;
+  text-decoration: underline;
+}
+.branchTableTitles td:not(:has(input[type="checkbox"])){
+  font-family: Lato;
+font-size: 16px;
+font-weight: 500;
+line-height: 32px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+
+.branchTableTitles td a:hover {
+  text-decoration: underline;
+}
+
+.branchTableTitles td input[type='checkbox'] {
+  margin-right: 8px;
+}
+
+.branchTableTitles td input[type='checkbox']:checked {
+  margin-right: 8px;
+  background-color:#0B4B2C;
+}
+
+.branchTableTitles tbody tr:nth-child(odd) {
+  background-color: #F2F2F2;
+}
+
+.branchTableTitles tbody tr:hover {
+  background-color: #e8f5e9;
+}
+.branchTableTitles td input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #2d6a4f; 
+  border-radius: 4px; 
+  background-color: #ffffff; 
+  width: 20px;
+  height: 20px;
+
+}
+
+.branchTableTitles td input[type='checkbox']:checked {
+  background-color: #2d6a4f; 
+  border-color: #2d6a4f; 
+  position: relative;
+}
+
+.branchTableTitles td input[type='checkbox']:checked::after {
+  content: '\2713'; 
+  position: absolute;
+  font-size: 14px;
+  color: #ffffff; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sections h1{
+padding: 0px 100px;
+  text-decoration: underline;
+  color: #FF80B4;
+  text-align: center;
+  margin-top: 100px;
+  
+}
+
+.sections p{
+  text-align: center;
+  font-family: Lato;
+font-size: 18px;
+font-weight: 400;
+line-height: var(--spacinglg);
+letter-spacing: 0.02em;
+text-align: justified;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.storeData{
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 100px;
+
+}
+.totalStores {
+  width: 283px;
+  height: 172px;
+  top: 24px;
+  left: 22px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
+  margin-bottom:50px
+}
+
+.insideDataText {
+  text-align: center;
+  overflow: none;
+  z-index: 1; 
+  margin: 0; 
+}
+
+.tslo {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute; 
+  top: -30px; 
+  left: -30px;
+  padding: 12px;
+  background-color: #ff80b4;
+}
+
+.topText {
+  font-family: Lato;
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000 !important;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.bottomText {
+  font-family: Lato;
+  font-size: 43px;
+  font-weight: 800;
+  text-align: center;
+  color: #000000 !important;
+  margin: 0px;
+}
+
+
+
+
+/* footer */
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  
+}
+
+.infoBox{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.infoImage {
+  width: 200px;
+  height: auto;
+  border: 2px solid #FFC0CB;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.infoText {
+  margin-top: 10px;
+  color: #333;
+  font-family: Lato;
+font-size: 18px;
+font-weight: 400;
+line-height: var(--spacinglg);
+letter-spacing: 0.02em;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.knowMoreButton {
+  background-color: #0B4B2C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-family: Lato;
+font-size: 14px;
+font-weight: 700;
+line-height: 9.16px;
+letter-spacing: -0.13952383399009705px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+
+
+.follow-us {
+  color: #FF69B4;
+  text-align: center;
+  font-family: Lato;
+font-size: 18px;
+font-weight: 400;
+line-height: var(--spacinglg);
+letter-spacing: 0.02em;
+text-align: justified;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.socialIcons {
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.socialIcon {
+  width: 50px;
+  height: 50px;
+}
