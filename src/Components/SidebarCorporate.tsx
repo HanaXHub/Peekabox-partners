@@ -23,7 +23,7 @@ interface SidebarProps {
     onNavClick: (section: string) => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
+const CorporateSidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
     const navigate = useNavigate();
 
     const handleNavClick = (path: string) => {
@@ -53,24 +53,22 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
 
             {isOpen ? (
                 <ul>
-                    <li onClick={() => handleNavClick('dashboard')}>
-                        <FontAwesomeIcon icon={faTachometerAlt} /> Dashboard
+                    <li onClick={() => handleNavClick('ManagementPage')}>
+                        <FontAwesomeIcon icon={faTachometerAlt} /> Management
                     </li>
-                    <li onClick={() => handleNavClick('surpriseBox')}>
-                        <FontAwesomeIcon icon={faGift} /> Surprise Bags
+                    <li onClick={() => handleNavClick('Dashboard')}>
+                        <FontAwesomeIcon icon={faGift} /> Dashboard
                     </li>
-                    <li onClick={() => handleNavClick('orderManagement')}>
-                        <FontAwesomeIcon icon={faClipboardList} /> Order Management
+                    <li onClick={() => handleNavClick('BranchManagement')}>
+                        <FontAwesomeIcon icon={faClipboardList} /> Branch Management
                     </li>
-                    <li onClick={() => handleNavClick('customerFeedback')}>
-                        <FontAwesomeIcon icon={faComments} /> Customer Interaction & Feedback
+                    <li onClick={() => handleNavClick('BrandManagement')}>
+                        <FontAwesomeIcon icon={faComments} /> Brand Management
                     </li>
-                    <li onClick={() => handleNavClick('storeManagement')}>
-                        <FontAwesomeIcon icon={faStore} /> Store Management
+                    <li onClick={() => handleNavClick('analystics')}>
+                        <FontAwesomeIcon icon={faStore} /> Analytics
                     </li>
-                    <li onClick={() => handleNavClick('incomePayment')}>
-                        <FontAwesomeIcon icon={faUsers} /> Income and Payment
-                    </li>
+                    
                     <span className="main-label">Settings</span>
                     <li onClick={() => handleNavClick('userManagement')}>
                         <FontAwesomeIcon icon={faUsers} /> Settings
@@ -86,19 +84,19 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
                 </ul>
             ) : (
                 <>
-                    <button className="menu-btn" onClick={() => handleNavClick('surpriseBox')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('ManagementPage')}>
                         <FontAwesomeIcon icon={faGift} />
                     </button>
-                    <button className="menu-btn" onClick={() => handleNavClick('orderManagement')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('Dashboard')}>
                         <FontAwesomeIcon icon={faClipboardList} />
                     </button>
-                    <button className="menu-btn" onClick={() => handleNavClick('customerFeedback')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('BranchManagement')}>
                         <FontAwesomeIcon icon={faComments} />
                     </button>
-                    <button className="menu-btn" onClick={() => handleNavClick('storeManagement')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('BrandManagement')}>
                         <FontAwesomeIcon icon={faStore} />
                     </button>
-                    <button className="menu-btn" onClick={() => handleNavClick('storeManagement')}>
+                    <button className="menu-btn" onClick={() => handleNavClick('Analystics')}>
                         <FontAwesomeIcon icon={faInfo} />
                     </button>
                     <span className="main-label">Settings</span>
@@ -117,4 +115,4 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
     );
 };
 
-export default Sidebar;
+export default CorporateSidebar;

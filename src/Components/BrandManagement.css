@@ -81,8 +81,8 @@
 
 .image {
   width: auto;
-  min-width:900px; 
-  min-height: 600px;  
+  min-width:500px; 
+  min-height: 500px;  
   max-width:900px; 
   max-height: 600px;   
   object-fit: cover;
@@ -297,7 +297,8 @@ text-decoration-skip-ink: none;
 }
 
 .infoBox{
-  width: 300px;
+  margin-top: 100px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,7 +306,7 @@ text-decoration-skip-ink: none;
 }
 
 .infoImage {
-  width: 200px;
+  width: 300px;
   height: auto;
   border: 2px solid #FFC0CB;
   border-radius: 8px;

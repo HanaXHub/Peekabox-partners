@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import image from 'react';
 import './BranchManagement.css';
 import Header from './Header';
-import Sidebar from './Sidebar';
+import SidebarCorporate from './SidebarCorporate';
 import { faAngleDown, faAngleUp, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import add from './Images/add.svg';
@@ -161,7 +161,7 @@ const BranchManagement: React.FC = () => {
   return (
     <div className='branchManagementContainer'>
       <Header />
-      <Sidebar isOpen={sidebarExpanded} onToggle={toggleSidebar} onNavClick={() => { }} />
+      <SidebarCorporate isOpen={sidebarExpanded} onToggle={toggleSidebar} onNavClick={() => { }} />
       <div className="whiteBox">
         <div className="branchManagementtitle">
           <h3>Branch Management</h3>

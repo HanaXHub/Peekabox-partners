@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ManagerCard from "./ManagementProfile";
 import "./ManagementPage.css";
 import Header from './Header';
-import Sidebar from './Sidebar';
+import SidebarCorporate from "./SidebarCorporate";
 
 interface Manager {
     id: number;
@@ -58,7 +58,7 @@ const AppContent: React.FC = () => {
     return (
         <div className='managementPageContainer'>
             <Header />
-            <Sidebar isOpen={sidebarExpanded} onToggle={toggleSidebar} onNavClick={() => { }} />
+            <SidebarCorporate isOpen={sidebarExpanded} onToggle={toggleSidebar} onNavClick={() => { }} />
 
             <div className="managementtitle">
                 <h3>Management</h3>

@@ -20,7 +20,7 @@ import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import Header from './Header';
-import Sidebar from './Sidebar';
+import SidebarCorporate from './SidebarCorporate';
 import { faC } from "@fortawesome/free-solid-svg-icons";
 
 L.Icon.Default.mergeOptions({
@@ -113,7 +113,7 @@ const BrandManagement: React.FC = () => {
   return (
     <div className="brandManagementContainer">
       <Header />
-      <Sidebar isOpen={sidebarExpanded} onToggle={toggleSidebar} onNavClick={() => { }} />
+      <SidebarCorporate isOpen={sidebarExpanded} onToggle={toggleSidebar} onNavClick={() => { }} />
       <div className="brandManagmentContent">
         <div className="banner">
           <img
